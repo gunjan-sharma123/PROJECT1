@@ -1,0 +1,8 @@
+<mvc:View controllerName="shop.project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    >
+    <Page id="page2" title="{i18n>title}">
+        
+    </Page>
+</mvc:View>

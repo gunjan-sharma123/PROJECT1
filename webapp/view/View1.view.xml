@@ -1,0 +1,18 @@
+<mvc:View controllerName="shop.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    >
+    <Page id="page" title="{i18n>title}">
+    <headerContent>
+    <Button icon="sap-icon://action" press="onNext"></Button>
+    </headerContent>
+    <content>
+    <SearchField id="idSF"></SearchField>
+    <List id="idLST" items="{/fruits}">
+    <items>
+    <ObjectListItem intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}" icon="{image}"></ObjectListItem>
+    </items>
+    </List>
+    </content>
+    </Page>
+</mvc:View>
