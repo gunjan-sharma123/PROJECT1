@@ -6,6 +6,10 @@ sap.ui.define([
 
     return Controller.extend("shop.project1.controller.View2", {
         onInit() {
+        },
+        onBack: function(){
+              var oAppCon = this.getView().getParent();
+            oAppCon.to("idView1");
         }
     });
 });

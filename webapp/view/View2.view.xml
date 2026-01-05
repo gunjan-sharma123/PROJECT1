@@ -2,7 +2,15 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     >
-    <Page id="page2" title="{i18n>title}">
+    <Page id="view2" title="View2" showNavButton="true" navButtonPress="onBack" >
+
+    <footer>
+    <Toolbar>
+    <ToolbarSpacer ></ToolbarSpacer>
+    <Button text ="order" type="Emphasized"/>
+     <Button text ="Cancel" type="Reject"/>
+    </Toolbar>
+    </footer>
         
     </Page>
 </mvc:View>

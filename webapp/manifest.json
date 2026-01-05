@@ -79,7 +79,7 @@
       "routes": [
         {
           "name": "RouteView1",
-          "pattern": ":?query:",
+          "pattern": "",
           "target": [
             "TargetView1"
           ]
@@ -88,7 +88,9 @@
       "targets": {
         "TargetView1": {
           "id": "View1",
-          "name": "View1"
+          "name": "View1",
+          "viewName":"View1",
+          "controlAggregation": "masterPages"
         }
       }
     },

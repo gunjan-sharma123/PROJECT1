@@ -8,9 +8,20 @@
     </headerContent>
     <content>
     <SearchField id="idSF" search="onSearch"></SearchField>
-    <List id="idLST" items="{/fruits}">
+    <List id="idLST" mode="SingleSelectMaster" itemPress="onNavNext" items="{
+            path: '/fruits',
+            sorter: {
+            path:'name'
+        }
+    }">
+    <headerToolbar>
+    <Toolbar >
+    <ToolbarSpacer ></ToolbarSpacer>
+    <Button icon="sap-icon://delete" press="onDeleteItems"></Button>
+    </Toolbar>
+    </headerToolbar>
     <items>
-    <ObjectListItem intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}" icon="{image}"></ObjectListItem>
+    <ObjectListItem type="Navigation" intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}" icon="{image}"></ObjectListItem>
     </items>
     </List>
     </content>
