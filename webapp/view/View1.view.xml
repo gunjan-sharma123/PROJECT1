@@ -7,7 +7,7 @@
     <Button icon="sap-icon://action" press="onNext"></Button>
     </headerContent>
     <content>
-    <SearchField id="idSF"></SearchField>
+    <SearchField id="idSF" search="onSearch"></SearchField>
     <List id="idLST" items="{/fruits}">
     <items>
     <ObjectListItem intro="{taste}" title="{name}" number="{price}" numberUnit="{curr}" icon="{image}"></ObjectListItem>
