@@ -3,7 +3,9 @@
     xmlns="sap.m"
     >
     <Page id="view2" title="View2" showNavButton="true" navButtonPress="onBack" >
-
+    <content>
+    <Text text="{name}123"></Text>
+    </content>
     <footer>
     <Toolbar>
     <ToolbarSpacer ></ToolbarSpacer>

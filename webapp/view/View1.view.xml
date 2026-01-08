@@ -8,7 +8,7 @@
     </headerContent>
     <content>
     <SearchField id="idSF" search="onSearch"></SearchField>
-    <List id="idLST" mode="SingleSelectMaster" itemPress="onNavNext" items="{
+    <List id="idLST"  selectionChange="onFruitSelect" mode="SingleSelectMaster" itemPress="onNavNext" items="{
             path: '/fruits',
             sorter: {
             path:'name'

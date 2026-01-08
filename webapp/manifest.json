@@ -81,7 +81,14 @@
           "name": "RouteView1",
           "pattern": "",
           "target": [
-            "TargetView1"
+            "TargetView1","TargetView2"
+          ]
+        },
+         {
+          "name": "second",
+          "pattern": "Fruits/{fruitId}",
+          "target": [
+            "TargetView1","modi"
           ]
         }
       ],
@@ -91,6 +98,16 @@
           "name": "View1",
           "viewName":"View1",
           "controlAggregation": "masterPages"
+        },
+         "TargetView2": {
+          "id": "Empty",
+          "name": "Empty",
+          "viewName":"Empty",
+          "controlAggregation": "detailPages"
+        },
+         "modi": {
+          "viewName":"View2",
+          "controlAggregation": "detailPages"
         }
       }
     },
